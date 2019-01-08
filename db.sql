@@ -1,0 +1,1 @@
+create or replace view movie_years as select distinct(year(m.world_premiere)) as year From movie m

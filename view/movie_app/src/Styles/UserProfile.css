@@ -1,0 +1,8 @@
+.UserProfile a.nav-link {
+    cursor: pointer;
+    color: #007bff !important;
+}
+
+.UserProfile a.nav-link:hover {
+    color:#0052aa !important;
+}

@@ -1,0 +1,29 @@
+.Thumbnail a {
+    text-decoration: none;
+    color: black;
+}
+
+.Thumbnail {
+    height: 320px;
+    font-weight: 600;
+}
+
+.Thumbnail:hover {
+    box-shadow: 0px 3px 5px grey;
+    cursor: pointer;
+}
+
+.Thumbnail:hover .caption {
+    font-weight: 700;
+}
+
+.thumbnailImage {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    transition: all .2s;
+}
+
+.Thumbnail:hover .thumbnailImage {
+    transform: scale(1.2);
+}

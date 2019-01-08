@@ -1,0 +1,25 @@
+.media-body {
+    text-align: left;
+}
+
+hr {
+    margin-top: 5px;
+}
+
+.commentContent {
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+/* .btns {
+    font-size: 2px !important;
+}
+
+.btns i {
+    font-size: 11px !important;
+    padding: 1px;
+}
+
+.btns button {
+    padding: 0px 5px 2px !important;
+} */

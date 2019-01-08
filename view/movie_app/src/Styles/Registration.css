@@ -1,0 +1,8 @@
+.imageUploader {
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+
+#submitFormBtn:disabled {
+    cursor: not-allowed;
+}

@@ -1,0 +1,19 @@
+.Nav {
+    opacity: 0.95;
+    box-shadow: 0px 2px 2px grey;
+}
+
+.dropdown-hand:hover {
+    cursor: pointer;
+}
+
+.user-summary:hover, .user-summary:active {
+    cursor: default;
+    background-color: white;
+    color: black;
+}
+
+/* .dropdown-menu.dropdown-menu-right.text-right.show {
+    position: relative;
+    z-index: 1000;
+} */

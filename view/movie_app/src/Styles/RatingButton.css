@@ -1,0 +1,13 @@
+.btn-gold, .btn-gold:hover, .btn-gold:active {
+    color: #FFF;
+}
+
+.btn-light {
+    background-color: #FFF !important;
+    border: solid 1px #ccc;
+}
+
+.btn-light:hover {
+    background-color: #cdcdcd !important;
+    border: solid 1px #bbb;
+}
