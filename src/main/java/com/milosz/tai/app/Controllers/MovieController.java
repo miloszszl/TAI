@@ -102,11 +102,6 @@ public class MovieController {
 
     }
 
-//    @PostMapping("/")
-//    Movie newMovie(@RequestBody Movie newMovie) {
-//        return movieRepository.save(newMovie);
-//    }
-
     @PostMapping("/{id}/comments")
     @PreAuthorize("hasRole('USER')")
     ResponseEntity<?> newMovieComment(@CurrentUser UserPrincipal currentUser, @PathVariable("id") Long movieId,
@@ -176,24 +171,6 @@ public class MovieController {
         return resp;
     }
 
-//    @PutMapping("/{id}")
-//    Movie updateMovie(@RequestBody Movie newMovie, @PathVariable Long id) {
-//        return movieRepository.findById(id).map(movie -> {
-//            movie.setTitle(newMovie.getTitle());
-//            movie.setDescription(newMovie.getDescription());
-//            movie.setWorldPremiere(newMovie.getWorldPremiere());
-//            movie.setPolandPremiere(newMovie.getPolandPremiere());
-//            movie.setBoxoffice(newMovie.getBoxoffice());
-//            //TODO
-//            return movieRepository.save(movie);
-//        }).orElseGet(() -> movieRepository.save(newMovie));
-//    }
-
-//    @DeleteMapping("/{id}")
-//    void deleteMovie(@PathVariable Long id) {
-//        movieRepository.deleteById(id);
-//    }
-
     @GetMapping("/types")
     List<MovieType> allTypes() {
         return movieTpeRepository.findAll();
@@ -205,27 +182,10 @@ public class MovieController {
         return movieRepository.findDistinctYears();
     }
 
-//    @PutMapping("/addType")
-//    @PreAuthorize("hasRole('ADMIN')")
-//    public ResponseEntity<?> addMovieType(@RequestBody MovieTypeRequest request) {
-//        MovieType type = new MovieType();
-//        type.setName(request.getName());
-//        type = movieTypeRepository.save(type);
-//        return new ResponseEntity<>(type, HttpStatus.CREATED);
-//    }
-
     @GetMapping("/short")
     @PreAuthorize("hasRole('ADMIN')")
     public Collection<MovieShort> getAllMoviesShort(){
         return movieRepository.findAllShort();
     }
 
-
-//    @PutMapping("/add")
-//    @PreAuthorize("hasRole('ADMIN')")
-//    public User getUserProfile(@CurrentUser UserPrincipal currentUser, @RequestBody String req) {
-//        User user = userRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("User", "username", currentUser.getId()));
-//        return user;
-//        return null;
-//    }
 }

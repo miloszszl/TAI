@@ -27,18 +27,13 @@ import java.util.stream.Collectors;
 @RequestMapping(path = "/stars")
 public class StarsController {
 
-//    private Logger logger = LoggerFactory.getLogger(getClass());
-
     private final MoviePersonRepository moviePersonRepository;
-
-//    private final MoviePersonCommentRepository moviePersonCommentRepository;
 
     private final MoviePersonService moviePersonService;
 
     @Autowired
     public StarsController(MoviePersonRepository moviePersonRepository, MoviePersonService moviePersonService) {
         this.moviePersonRepository = moviePersonRepository;
-//        this.moviePersonCommentRepository = moviePersonCommentRepository;
         this.moviePersonService = moviePersonService;
     }
 

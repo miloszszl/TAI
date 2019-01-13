@@ -21,11 +21,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import javax.imageio.ImageIO;
 import javax.validation.Valid;
-import java.awt.image.BufferedImage;
-import java.awt.image.DataBufferByte;
-import java.awt.image.WritableRaster;
 import java.io.File;
 import java.io.IOException;
 import java.net.URI;
@@ -37,8 +33,6 @@ import java.util.Set;
 @RestController
 @RequestMapping("/auth")
 public class AuthController {
-
-//    private Logger logger = LoggerFactory.getLogger(getClass());
 
     private final AuthenticationManager authenticationManager;
 
